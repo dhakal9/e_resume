@@ -6,13 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amrit Dhakal</title>
     {% load static %}
-    <link rel="stylesheet" href="{% static 'style.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+
 
 </head>
 <body>
     <div class="hero">
         <nav>
-            <img src="media/logo.png" class="logo">
+            <img src="{% static 'media/logo.png' %}" class="logo">
             <ul>
                 <li><a href="#">HOME</a></li>
                 <li><a href="#">ABOUT</a></li>
@@ -26,8 +29,8 @@
             <a href="#">Download CV</a>
         </div>
         <div class="images">
-            <img src="{{ MEDIA_URL }}logo.png" class="logo">
-            <img src="{{ MEDIA_URL }}amrit.png" class="amrit">
+            <img src="{% static 'media/shape.png'%}" class="shape">
+            <img src="{% static 'media/amrit.png'%}" class="amrit">
         </div>
 
 
