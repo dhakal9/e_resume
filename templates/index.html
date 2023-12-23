@@ -1,47 +1,419 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amrit Dhakal</title>
-    {% load static %}
-
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-
-
-
-</head>
-<body>
-    <div class="hero">
-        <nav>
-            <img src="{% static 'media/logo.png' %}" class="logo">
-            <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">CONTACT ME</a></li>
-            </ul>
-        </nav>
-        <div class="details">
-            <h1>I am Amrit <span>Dhakal</span></h1>
-            <p>Do I look professional ? Well, leave it. All I do is <br> Google, Copy and Paste  
-                </p>
-            <a href="#">Download CV</a>
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+    <!-- slider section -->
+    <section class="slider_section ">
+        <div class="carousel_btn-container">
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="sr-only">Next</span>
+          </a>
         </div>
-        <div class="images">
-            <img src="{% static 'media/shape.png'%}" class="shape">
-            <img src="{% static 'media/amrit.png'%}" class="amrit">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">01</li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1">02</li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2">03</li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-5 offset-md-1">
+                    <div class="detail-box">
+                      <h1>
+                        Amrit Dhakal <br>
+                      </h1>
+                      <p>
+                        Hello, I am Amrit Dhakal, a skilled software developer with two years <br>
+                        of experience in Python.
+                      </p>
+                      <div class="btn-box">
+                        <a href="" class="btn-1">
+                          About Me
+                        </a>
+                        <a href="" class="btn-2">
+                          Contact Me
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="offset-md-1 col-md-4 img-container">
+                    <div class="img-box">
+                      <img src="{% static "images/amrit.png" %}" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item ">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-5 offset-md-1">
+                    <div class="detail-box">
+                      <h1>
+                        Amrit Dhakal <br>
+                      </h1>
+                      <p>
+                        I excel in creating seamless user experiences and writing clean, maintainable code.
+                      </p>
+                      <div class="btn-box">
+                        <a href="" class="btn-1">
+                          About Me
+                        </a>
+                        <a href="" class="btn-2">
+                          Contact Me
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="offset-md-1 col-md-4 img-container">
+                    <div class="img-box">
+                      <img src="{% static "images/amrit1.png" %}" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item ">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-5 offset-md-1">
+                    <div class="detail-box">
+                      <h1>
+                        Amrit Dhakal <br>
+
+                      </h1>
+                      <p>
+                        Passionate about continuous learning, I stay updated with the latest industry trends and technologies to deliver high-quality software solutions.
+                      </p>
+                      <div class="btn-box">
+                        <a href="" class="btn-1">
+                          About Me
+                        </a>
+                        <a href="" class="btn-2">
+                          Contact Me
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="offset-md-1 col-md-4 img-container">
+                    <div class="img-box">
+                      <img src="{% static "images/amrit2.png" %}" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
         </div>
-
-
-        <!--div class='footer'>
-            <div class="social">
-                <a href="https://github.com/dhakal9"><img src="images/github.jpg" class="slogo"></a>
-                <a href="https://www.instagram.com/dhakal_9/"><img src="images/ig.png" class="slogo"></a>
-                <a href="https://www.linkedin.com/in/amrit-dhakal-a02b9a20a"><img src="images/linkedin.png" class="slogo"></a>
-             </div>
-             <a> All Rights Reserve Amrit.Inc © 2022 </a> 
-        </div>    
+  
+      </section>
+      <!-- end slider section -->
     </div>
-</body>
-</html>
+  
+  
+    <!-- experience section -->
+  
+    <section class="experience_section layout_padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5">
+            <div class="img-box">
+              <img src="{% static "images/experience-img.jpg" %}" alt="">
+            </div>
+          </div>
+          <div class="col-md-7">
+            <div class="detail-box">
+              <div class="heading_container">
+                <h2>
+                    Who am I ?
+                </h2>
+              </div>
+              <p>
+                I am a dynamic, motivated, and adaptable experienced personality looking for opportunities to explore and expand my knowledge along with the experience that I acquired. I am looking forward to learning and working in the field of Software Development.
+              </p>
+              <div class="btn-box">
+                <a href="" class="btn-1">
+                  Read More
+                </a>
+                <a href="" class="btn-2">
+                  Hire
+                </a>
+              </div>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+    </section>
+  
+    <!-- end experience section -->
+  
+    <!-- category section -->
+  
+    <section class="category_section layout_padding">
+      <div class="container">
+        <div class="heading_container">
+          <h2>
+            Category
+          </h2>
+        </div>
+        <div class="category_container">
+          <div class="box">
+            <div class="img-box">
+              <img src="{% static "images/c1.png"%}" alt="">
+            </div>
+            <div class="detail-box">
+              <h5>
+                AI and Automation
+              </h5>
+            </div>
+          </div>
+          <div class="box">
+            <div class="img-box">
+              <img src="{% static "images/c2.png" %}" alt="">
+            </div>
+            <div class="detail-box">
+              <h5>
+                Web Development
+              </h5>
+            </div>
+          </div>
+          <div class="box">
+            <div class="img-box">
+              <img src="{% static "images/c3.png"%}" alt="">
+            </div>
+            <div class="detail-box">
+              <h5>
+                IT Support
+              </h5>
+            </div>
+          </div>
+          <div class="box">
+            <div class="img-box">
+              <img src="{% static "images/c4.png"%}" alt="">
+            </div>
+            <div class="detail-box">
+              <h5>
+                Presentation and Documentation
+              </h5>
+            </div>
+          </div>
+          <div class="box">
+            <div class="img-box">
+              <img src="{% static "images/c5.png"%}" alt="">
+            </div>
+            <div class="detail-box">
+              <h5>
+                Data Analysis
+              </h5>
+            </div>
+          </div>
+          <div class="box">
+            <div class="img-box">
+              <img src="{% static "images/c6.png" %}" alt="">
+            </div>
+            <div class="detail-box">
+              <h5>
+                Database
+              </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+  
+    <!-- end category section -->
+  
+    <!-- about section -->
+  
+    <section class="about_section layout_padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 col-lg-9 mx-auto">
+            <div class="img-box">
+              <img src="{% static "images/about-img.jpg"%}" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="detail-box">
+          <h2>
+            Soft Skills
+          </h2>
+          <p>
+            I excel as a team player, valuing collaboration and consistently contributing ideas while supporting my teammates to achieve shared objectives. My adept communication skills enable me to foster strong working relationships, ensuring that ideas are conveyed clearly and effectively. This proficiency in communication has not only facilitated seamless interactions within teams but has also streamlined project execution, leading to efficient outcomes and reduced misunderstandings. Additionally, my commitment to punctuality and hard work reflects my dedication to meeting deadlines and delivering high-quality results consistently.
+          </p>
+          <a href="">
+            Read More
+          </a>
+        </div>
+      </div>
+    </section>
+  
+    <!-- end about section -->
+  
+    <!-- freelance section -->
+  
+    <section class="freelance_section ">
+      <div id="accordion">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-5 offset-md-1">
+              <div class="detail-box">
+                <div class="heading_container">
+                  <h2>
+                    Portfolio
+                  </h2>
+                </div>
+                <div class="tab_container">
+                  <div class="t-link-box" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <div class="img-box">
+                      <img src="{% static "images/f1.png" %}" alt="">
+                    </div>
+                    <div class="detail-box">
+                      <h5>
+                        2
+                      </h5>
+                      <h3>
+                        Company Served
+                      </h3>
+                    </div>
+                  </div>
+                  <div class="t-link-box collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <div class="img-box">
+                      <img src="{% static "images/f2.png" %}" alt="">
+                    </div>
+                    <div class="detail-box">
+                      <h5>
+                        2
+                      </h5>
+                      <h3>
+                        My Clients
+                      </h3>
+                    </div>
+                  </div>
+                  <div class="t-link-box collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <div class="img-box">
+                      <img src="{% static "images/f3.png" %}" alt="">
+                    </div>
+                    <div class="detail-box">
+                      <h5>
+                        100 plus
+                      </h5>
+                      <h3>
+                        Freelancing
+                      </h3>
+                    </div>
+                  </div>
+                  <div class="t-link-box collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    <div class="img-box">
+                      <img src="{% static "images/f4.png" %}" alt="">
+                    </div>
+                    <div class="detail-box">
+                      <h5>
+                        98%
+                      </h5>
+                      <h3>
+                        Customer <br>
+                        Satisfaction Rate
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="collapse show" id="collapseOne" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="img-box">
+                  <img src="{% static "images/freelance-img.jpg" %}" alt="">
+                </div>
+              </div>
+              <div class="collapse" id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="img-box">
+                    <img src="{% static "images/freelance-img.jpg" %}" alt="">
+                </div>
+              </div>
+              <div class="collapse" id="collapseThree" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="img-box">
+                    <img src="{% static "images/freelance-img.jpg" %}" alt="">
+                </div>
+              </div>
+              <div class="collapse" id="collapseFour" aria-labelledby="headingfour" data-parent="#accordion">
+                <div class="img-box">
+                    <img src="{% static "images/freelance-img.jpg" %}" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <!-- end freelance section -->
+  
+    <!-- client section -->
+  
+    <section class="client_section layout_padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9 col-md-10 mx-auto">
+            <div class="heading_container">
+              <h2>
+                Favourite Quotes
+              </h2>
+            </div>
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="detail-box">
+                    <h4>
+                      Game of Thrones
+                    </h4>
+                    <p>
+                        It is a big and beautiful world. Most of us live and die in the same corner where we were born in, never get to see any of it. I don't want to be most of us.
+                    </p>
+                    <img src="{% static 'images/quote.png' %}" alt="">
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="detail-box">
+                    <h4>
+                      Nelson Mendala
+                    </h4>
+                    <p>
+                        The greatest glory in living lies not in never falling, but in rising every time we fall.
+                    </p>
+                    <img src="{% static 'images/quote.png' %}" alt="">
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="detail-box">
+                    <h4>
+                      Peaky Blinders
+                    </h4>
+                    <p>
+                        Everyone's A Whore Grace. We Just Sell Different Parts Of Ourselves
+                    </p>
+                    <img src="{% static 'images/quote.png' %}" alt="">
+                  </div>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <!-- end client section -->
+    {% endblock content%}
